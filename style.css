@@ -1,0 +1,321 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin: 60px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+nav div {
+  width: 40%;
+}
+
+nav div:nth-child(3) {
+  text-align: end;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav div svg {
+  margin-right: 10px;
+}
+
+/* ------------ Hero -------------- */
+
+.hero > h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.hero-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-items > img {
+  border-radius: 200px;
+  border: 15px solid rgb(230, 230, 230);
+  width: 35%;
+  object-fit: cover;
+}
+
+.third-item {
+  text-align: end;
+}
+
+.third-item > .hero-item > h2 {
+  font-size: 48px;
+}
+
+.hero p {
+  color: rgb(171, 171, 171);
+  font-size: 14px;
+}
+
+.hero h2 {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.hero-items > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+/* --------------- My Advantage ----------- */
+.heading {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.advantage-cards .card .card-body > h3 {
+  font-size: 24px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.advantage-cards .card .card-body {
+  background-color: rgb(237, 237, 237);
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.advantage-cards > .card {
+  text-align: center;
+}
+
+.advantage-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* ---------- Education & Experience --------  */
+.card-p {
+  color: grey;
+  font-size: 14px;
+  margin: 0;
+}
+
+.edu-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edu-cards .edu-card .card-body > h4 {
+  margin: 0;
+}
+
+.year {
+  margin-bottom: 30px;
+}
+
+.edu-cards .edu-card .card-body {
+  margin-bottom: 20px;
+}
+
+/* ------------ Project ---------- */
+.project-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card > h4 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.project-card > .card-p {
+  margin-top: 20px;
+}
+
+.project-card > img {
+  max-width: 300px;
+  border: 1px solid black;
+}
+
+/* -------- Customer ------------ */
+
+.customer {
+  text-align: center;
+}
+
+.customer > h2 {
+  padding: 0 250px;
+  margin-bottom: 30px;
+}
+
+.customer > p {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.customer > h4 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.customer > div {
+  display: flex;
+  justify-content: center;
+}
+
+.customer > div > img {
+  max-width: 150px;
+}
+
+.customer > hr {
+  margin-bottom: 20px;
+}
+
+/* ----------Footer ----------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 12px;
+  padding: 20px;
+}
+
+footer > div {
+  display: inline-block;
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .edu-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav div {
+    text-align: center;
+    min-width: 360px;
+  }
+
+  .hero-item {
+    text-align: center;
+  }
+
+  .hero-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero img {
+    margin: 40px 0;
+    height: 300px;
+    width: 200px;
+  }
+
+  footer div {
+    display: none;
+  }
+
+  .advantage-cards {
+    flex-wrap: wrap;
+  }
+
+  .customer > div > img:nth-child(3) {
+    display: none;
+  }
+  .customer > h2 {
+    margin: 0 !important;
+    padding: 0 20px !important;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav div:last-child {
+    display: none;
+  }
+  .customer > h2 {
+    padding: 0 100px;
+    margin-bottom: 30px;
+  }
+
+  .customer div img:nth-child(5),
+  .customer div img:nth-child(4) {
+    display: none;
+  }
+
+  .advantage-cards .card:last-child {
+    display: none;
+  }
+  nav div {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  nav div {
+    width: 30%;
+  }
+
+  .project-card > img {
+    max-width: 280px;
+  }
+
+  .project-cards {
+    justify-content: center;
+  }
+}
